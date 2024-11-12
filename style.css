@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 16px;
+}
+
+.products {
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+    background-color:antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.product {
+    height: 25rem;
+    background-color: black;
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product {
+        height: 15rem;
+    }
+}
+
+/* Desktops */
+@media screen and (min-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr)
+    }
+    .product {
+        height: 10rem;
+    }
+}
